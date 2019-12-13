@@ -5,6 +5,8 @@ function ready () {
         let el1 = document.createElement('p');
         let el2 = document.createElement('p');
         let el3 = document.createElement('p');
+        let el4 = document.createElement('p');
+
 
         let feeling = document.forms.feeling;
         let better = document.forms.better;
@@ -31,36 +33,39 @@ function ready () {
         }
 
         if (sympotms = "anxious"){
-            el3.innerHTML = 
+            el3.innerHTML = "You said you were feeling anxious."
         }
         if (sympotms = "depressed"){
-            el3.innerHTML = 
+            el3.innerHTML = "You said you were feeling depressed."
         }
         if (sympotms = "tired"){
-            el3.innerHTML = 
+            el3.innerHTML = "You said you were feeling tired."
         }
         if (sympotms = "confused"){
-            el3.innerHTML = 
+            el3.innerHTML = "You said you were feeling confused."
         }
         if (sympotms = "distant"){
-            el3.innerHTML = 
+            el3.innerHTML = "You said you were feeling distant."
         }
         if (sympotms = "hurting"){
-            el3.innerHTML = 
+            el3.innerHTML = "You said you were thinking about hurting yourself."
         }
         if (sympotms = "bored"){
-            el3.innerHTML =    
+            el3.innerHTML = "You said you were feeling bored."
         }
         if (sympotms = "lonely"){
-            el3.innerHTML = 
+            el3.innerHTML = "You said you were feeling lonely."
         }
         if (sympotms = "overwhelmed"){
-            el3.innerHTML = 
+            el3.innerHTML = "You said you were feeling overwhelmed."
         }
+
+        el4.innerHTML = ""
 
     answers.append(el1)
     answers.append(el2)
     answers.append(el3)
+    answers.append(el4)
     }
 
 }
