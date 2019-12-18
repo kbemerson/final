@@ -1,11 +1,15 @@
 function ready () {
     console.log("Page Ready");
 
+    let clickcount = 0
+
     done.onclick = function () {
         let el1 = document.createElement('p');
         let el2 = document.createElement('p');
         let el3 = document.createElement('p');
         let el4 = document.createElement('p');
+
+        clickcount += 1
 
         let feeling = feelingselect.value;
         let better = betterselect.value;
@@ -67,10 +71,16 @@ function ready () {
 
         el3.innerHTML = part1 + part2 + part3 + part4 + part5 + part6 + part7 + part8 + part9
 
+        if (clickcount >= 2) {
+            alert("Please reload the page first!");
+            el1.innerHTML = ""
+            el2.innerHTML = ""
+            el3.innerHTML = ""
+        }
+
     answers.append(el1)
     answers.append(el2)
     answers.append(el3)
-    answers.append(el4)
     }
 }
 document.addEventListener("DOMContentLoaded", ready);
