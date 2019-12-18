@@ -58,39 +58,49 @@
         <h1>Welcome to Java Joy! Please answer the questions below to get feeback on your mood.</h1>
         <p>This site is aimed at helping people with mental illness by providing positivity and encouragement. It can also provide advice and activities to help improve the user's mood.</p><br>
         <h2>How are you feeling today? Please pick a number between 1 and 10 on the scale below. 1 is the worst, 10 is the best.</h2>
+            
             <form name="feeling">
-                <select>
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                    <option value="six">6</option>
-                    <option value="seven">7</option>
-                    <option value="eight">8</option>
-                    <option value="nine">9</option>
+                <select id="feelingselect">
                     <option value="ten">10</option>
+                    <option value="nine">9</option>
+                    <option value="eight">8</option>
+                    <option value="seven">7</option>
+                    <option value="six">6</option>
+                    <option value="five">5</option>
+                    <option value="four">4</option>
+                    <option value="three">3</option>
+                    <option value="two">2</option>
+                    <option value="one">1</option>
                 </select>
+            </form><br>
+        
         <h2>Are you feeling better than you were yesterday? Please select the option that best applies to you.</h2>
             <form name="better">
-                <input type="radio" vaule="better"> Better 
-                <input type="radio" vaule="same" checked> The Same 
-                <input type="radio" vaule="worse"> Worse
+                <select id="betterselect">
+                    <option vaule="better">Better</option> 
+                    <option vaule="same" >The Same</option>
+                    <option vaule="worse">Worse</option>
+                </select>
             </form><br>
+        
         <h2>Please check all of the options below that apply to you.</h2>
-            <form name="symptoms">
-                <input value="anxious" type="checkbox" unchecked>I feel anxious 
-                <input value="depressed" type="checkbox" unchecked>I feel depressed 
-                <input value="tired" type="checkbox" unchecked>I feel tired
-                <input value="confused" type="checkbox" unchecked>I feel confused 
-                <input value="distant" type="checkbox" unchecked>I feel distant <br>
-                <input value="hurting" type="checkbox" unchecked>I feel like hurting myself
-                <input value="bored" type="checkbox" unchecked>I feel bored
-                <input value="lonely" type="checkbox" unchecked>I feel lonely
-                <input value="overwhelmed" type="checkbox" unchecked>I feel overwhelmed
+            <form name="symptom" id="symptom">
+                <input id="anxious" value="anxious" type="checkbox" unchecked>I feel anxious 
+                <input id="depressed" value="depressed" type="checkbox" unchecked>I feel depressed 
+                <input id="tired" value="tired" type="checkbox" unchecked>I feel tired
+                <input id="confused" value="confused" type="checkbox" unchecked>I feel confused 
+                <input id="distant" value="distant" type="checkbox" unchecked>I feel distant<br>
+                <input id="hurting" value="hurting" type="checkbox" unchecked>I feel like hurting myself
+                <input id="bored" value="bored" type="checkbox" unchecked>I feel bored
+                <input id="lonely" value="lonely" type="checkbox" unchecked>I feel lonely
+                <input id="overwhelmed" value="overwhelmed" type="checkbox" unchecked>I feel overwhelmed
             </form><br>
+        
         <h2>Press "Done" to submit your answers.</h2>
         <button id="done">Done</button>
+        <h2>Keep reading below for more advice!</h2>
+        <p>No matter how you're feeling, it's still important to take care of yourself. Remember to take some time off to relax. <br>Drink more water. You should be drinking about eight glasses a day. <br>Try to go to bed earlier as well. You should aim for about eight hours of sleep a night. <br>Never be afraid to talk to a doctor or a therapist. It's a safe, judgement free way to get help. Remember, it's their job to help you, so you'll get the best care possible. <br>Try exercising! It's not the most fun, sure, but exercising regularly releases endorphins, which will boost your mood. <br> Try something new! One of the best ways to improve your mood is to do something you enjoy doing. Try picking up a hobby or participating in an activity you enjoy. <br>Try following the breathing pattern below for a few minutes. <br>Take a deep breath. You got this!</p>
+        <img scr="https://dailyburn.com/life/wp-content/uploads/2016/04/circle-gif-2.gif" alt="Deep breaths">
     </article>
 <body>
     <script src="final.js"></script>
